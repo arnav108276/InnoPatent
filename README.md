@@ -5,7 +5,8 @@
 [![Selenium](https://img.shields.io/badge/Selenium-%23ff9e00.svg)](https://www.selenium.dev/)
 
 ## :rocket: **InnoPatent - Patent Search Engine**
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/72903324-cf57-4e90-80a6-ed3c9734e0ed" width="900">
+![image](https://github.com/user-attachments/assets/ec125eb1-9b94-46e0-bb3b-39694c171afa)
+
 
 
 InnoPatent is a modern patent search engine that lets you explore patents with ease. It helps users efficiently search, explore, and view detailed patent information, including **title**, **authors**, **description**, and **associated images**. The web app scrapes data from **Google Patents** and **Espacenet**.
@@ -49,6 +50,9 @@ To run InnoPatent locally, follow these easy steps!
   ### Activate server
 
     waitress-serve --port=port_no. directory_name.back:app
+### Working
+![image](https://github.com/user-attachments/assets/7e39a1a6-722e-42fe-aed6-ba47f9d2b36a)
+
 :bar_chart: Contributing
 ##  We welcome contributions! Follow these steps to contribute:
 
