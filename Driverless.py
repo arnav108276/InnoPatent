@@ -37,24 +37,13 @@ def gwo_optimize_results(results, target_query):
     return [alpha, beta, delta] + rest if beta and delta else [alpha]
 
 # Setup Chrome WebDriver using webdriver-manager
-'''def get_chrome_driver():
+def get_chrome_driver():
     chrome_options = Options()
-    #chrome_options.add_argument('--headless')  # Headless mode
+    chrome_options.add_argument('--headless')  # Headless mode
     chrome_options.add_argument('--no-sandbox')
 
     # Automatically fetch and setup the right ChromeDriver version
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    return driver'''
-def get_chrome_driver():
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')  # Enable headless mode for server environments
-    chrome_options.add_argument('--no-sandbox')  # Required for running as root
-    chrome_options.add_argument('--disable-dev-shm-usage')  # Avoid /dev/shm issues on Render
-    chrome_options.binary_location = "/usr/bin/google-chrome"  # Path to Chrome binary
-
-    # Use the installed ChromeDriver
-    service = Service("/usr/local/bin/chromedriver")
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
